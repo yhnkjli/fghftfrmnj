@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: book
+  name: ghtfgg
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: book
+      app: ghtfgg
   template:
     metadata:
       labels:
-        app: book
+        app: ghtfgg
     spec:
       containers:
-      - image: okteto.dev/book:latest
-        name: book
+      - image: okteto.dev/ghtfgg:latest
+        name: ghtfgg
         ports:
         - containerPort: 8080
         env:
@@ -23,12 +23,12 @@ spec:
         - name: ProxySite
           value: "mirror.umd.edu"
         - name: Vless_UUID
-          value: "95ec1cd2-85a2-4f4b-8c1c-4f1e9cc840a1"
+          value: "56234054-335f-4dce-99c9-10d9ee51a3f9"
         - name: Vless_Path
-          value: "/app"
+          value: "/vlessaa"
         - name: Vmess_UUID
-          value: "95ec1cd2-85a2-4f4b-8c1c-4f1e9cc840a1"
+          value: "56234054-335f-4dce-99c9-10d9ee51a3f9"
         - name: Vmess_Path
-          value: "/add"
+          value: "/vmessbb"
         - name: Share_Path
           value: "$Share_Path"
